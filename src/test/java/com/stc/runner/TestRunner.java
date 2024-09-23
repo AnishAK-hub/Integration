@@ -13,7 +13,7 @@ public class TestRunner extends AutomationBase {
 
 	 @BeforeClass
 	    @Parameters({"browserName"})
-	    public void setUp(@Optional("chrome") String browserName) throws IOException {
+	    public void setUp(@Optional("edge") String browserName) throws IOException {
 	        startBrowserSession(browserName);
 	        String applicationUrl = new Keywords().getPropertyValue("Config", "applicationurl");
 	        new Keywords().loadUrl(driver, applicationUrl);
