@@ -22,7 +22,7 @@ public class AutomationBase {
      * @author Anish
      * @since 03/October/2023
      * @param browserName
-     * @return WebDriver instance
+     * @return
      * @throws IOException
      */
     public WebDriver startBrowserSession(String browserName) throws IOException {
@@ -47,7 +47,6 @@ public class AutomationBase {
 
         } else if (browserName.equalsIgnoreCase("edge") || browserName.equalsIgnoreCase("Edge_headless")) {
             EdgeOptions options = new EdgeOptions();
-            options.addArguments("--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage", "--guest");
             if (browserName.equalsIgnoreCase("Edge_headless")) {
                 options.addArguments("--headless");
             }
@@ -58,10 +57,8 @@ public class AutomationBase {
             System.out.println("Unsupported browser: " + browserName);
         }
 
-        if (driver != null) {
-            driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        }
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         return driver;
     }
 
