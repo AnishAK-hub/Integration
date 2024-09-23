@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="5" passed="0" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-23T16:12:47 IST" name="Suite" finished-at="2024-09-23T16:13:08 IST" duration-ms="20980">
+  <suite started-at="2024-09-23T16:26:39 IST" name="Suite" finished-at="2024-09-23T16:27:32 IST" duration-ms="52744">
     <groups>
     </groups>
-    <test started-at="2024-09-23T16:12:47 IST" name="Parallel Tests Edge" finished-at="2024-09-23T16:13:08 IST" duration-ms="20980">
+    <test started-at="2024-09-23T16:26:39 IST" name="Parallel Tests Edge" finished-at="2024-09-23T16:27:32 IST" duration-ms="52744">
       <class name="com.stc.test.HomeMenu">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.stc.test.HomeMenu@437ebf59]" started-at="2024-09-23T16:12:47 IST" name="setUp" finished-at="2024-09-23T16:12:53 IST" duration-ms="6337" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.stc.test.HomeMenu@437ebf59]" started-at="2024-09-23T16:26:39 IST" name="setUp" finished-at="2024-09-23T16:26:44 IST" duration-ms="4635" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AllDeviceMenu()[pri:1, instance:com.stc.test.HomeMenu@437ebf59]" started-at="2024-09-23T16:12:53 IST" name="AllDeviceMenu" finished-at="2024-09-23T16:12:56 IST" duration-ms="3162" status="FAIL">
+        <test-method signature="AllDeviceMenu()[pri:1, instance:com.stc.test.HomeMenu@437ebf59]" started-at="2024-09-23T16:26:44 IST" name="AllDeviceMenu" finished-at="2024-09-23T16:27:21 IST" duration-ms="36780" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
@@ -27,9 +27,9 @@ from unknown error: web view not found
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [5a29efb14c971ea1e59695722ec425e0, findElement {using=xpath, value=//a[contains(text(),'Smartphones')]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59636}, msedge: {msedgedriverVersion: 129.0.2792.52 (6462e8fc16ec..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59636/devtoo..., se:cdpVersion: 129.0.2792.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5a29efb14c971ea1e59695722ec425e0]]>
+Command: [bc79eade2ec6033a5131e7dd8ed773d7, findElement {using=xpath, value=(//span[contains(text(),'Add filters')])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60395}, msedge: {msedgedriverVersion: 129.0.2792.52 (6462e8fc16ec..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60395/devtoo..., se:cdpVersion: 129.0.2792.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bc79eade2ec6033a5131e7dd8ed773d7]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
@@ -38,11 +38,10 @@ from unknown error: web view not found
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [5a29efb14c971ea1e59695722ec425e0, findElement {using=xpath, value=//a[contains(text(),'Smartphones')]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59636}, msedge: {msedgedriverVersion: 129.0.2792.52 (6462e8fc16ec..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59636/devtoo..., se:cdpVersion: 129.0.2792.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5a29efb14c971ea1e59695722ec425e0
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+Command: [bc79eade2ec6033a5131e7dd8ed773d7, findElement {using=xpath, value=(//span[contains(text(),'Add filters')])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60395}, msedge: {msedgedriverVersion: 129.0.2792.52 (6462e8fc16ec..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60395/devtoo..., se:cdpVersion: 129.0.2792.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bc79eade2ec6033a5131e7dd8ed773d7
+at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
@@ -58,8 +57,9 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy21.click(Unknown Source)
-at com.stc.pages.HeaderManuPage.setSmartphones(HeaderManuPage.java:40)
+at com.sun.proxy.$Proxy21.isDisplayed(Unknown Source)
+at com.stc.pages.HeaderManuPage.viewFilter(HeaderManuPage.java:108)
+at com.stc.pages.HeaderManuPage.setSmartphones(HeaderManuPage.java:42)
 at com.stc.test.HomeMenu.AllDeviceMenu(HomeMenu.java:15)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -95,7 +95,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AllDeviceMenu -->
-        <test-method signature="PopularBrandMenu()[pri:2, instance:com.stc.test.HomeMenu@437ebf59]" started-at="2024-09-23T16:12:57 IST" name="PopularBrandMenu" finished-at="2024-09-23T16:12:59 IST" duration-ms="2028" status="FAIL">
+        <test-method signature="PopularBrandMenu()[pri:2, instance:com.stc.test.HomeMenu@437ebf59]" started-at="2024-09-23T16:27:21 IST" name="PopularBrandMenu" finished-at="2024-09-23T16:27:23 IST" duration-ms="2006" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
@@ -104,9 +104,9 @@ from unknown error: web view not found
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [5a29efb14c971ea1e59695722ec425e0, findElement {using=xpath, value=(//p[contains(text(),'Devices')])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59636}, msedge: {msedgedriverVersion: 129.0.2792.52 (6462e8fc16ec..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59636/devtoo..., se:cdpVersion: 129.0.2792.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5a29efb14c971ea1e59695722ec425e0]]>
+Command: [bc79eade2ec6033a5131e7dd8ed773d7, findElement {using=xpath, value=(//p[contains(text(),'Devices')])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60395}, msedge: {msedgedriverVersion: 129.0.2792.52 (6462e8fc16ec..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60395/devtoo..., se:cdpVersion: 129.0.2792.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bc79eade2ec6033a5131e7dd8ed773d7]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
@@ -115,11 +115,10 @@ from unknown error: web view not found
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [5a29efb14c971ea1e59695722ec425e0, findElement {using=xpath, value=(//p[contains(text(),'Devices')])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59636}, msedge: {msedgedriverVersion: 129.0.2792.52 (6462e8fc16ec..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59636/devtoo..., se:cdpVersion: 129.0.2792.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5a29efb14c971ea1e59695722ec425e0
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+Command: [bc79eade2ec6033a5131e7dd8ed773d7, findElement {using=xpath, value=(//p[contains(text(),'Devices')])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60395}, msedge: {msedgedriverVersion: 129.0.2792.52 (6462e8fc16ec..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60395/devtoo..., se:cdpVersion: 129.0.2792.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bc79eade2ec6033a5131e7dd8ed773d7
+at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
@@ -173,7 +172,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PopularBrandMenu -->
-        <test-method signature="MoreFromSTCMenu()[pri:3, instance:com.stc.test.HomeMenu@437ebf59]" started-at="2024-09-23T16:12:59 IST" name="MoreFromSTCMenu" finished-at="2024-09-23T16:13:01 IST" duration-ms="2026" status="FAIL">
+        <test-method signature="MoreFromSTCMenu()[pri:3, instance:com.stc.test.HomeMenu@437ebf59]" started-at="2024-09-23T16:27:23 IST" name="MoreFromSTCMenu" finished-at="2024-09-23T16:27:25 IST" duration-ms="2019" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
@@ -182,9 +181,9 @@ from unknown error: web view not found
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [5a29efb14c971ea1e59695722ec425e0, findElement {using=xpath, value=(//p[contains(text(),'Devices')])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59636}, msedge: {msedgedriverVersion: 129.0.2792.52 (6462e8fc16ec..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59636/devtoo..., se:cdpVersion: 129.0.2792.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5a29efb14c971ea1e59695722ec425e0]]>
+Command: [bc79eade2ec6033a5131e7dd8ed773d7, findElement {using=xpath, value=(//p[contains(text(),'Devices')])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60395}, msedge: {msedgedriverVersion: 129.0.2792.52 (6462e8fc16ec..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60395/devtoo..., se:cdpVersion: 129.0.2792.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bc79eade2ec6033a5131e7dd8ed773d7]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
@@ -193,11 +192,10 @@ from unknown error: web view not found
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [5a29efb14c971ea1e59695722ec425e0, findElement {using=xpath, value=(//p[contains(text(),'Devices')])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59636}, msedge: {msedgedriverVersion: 129.0.2792.52 (6462e8fc16ec..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59636/devtoo..., se:cdpVersion: 129.0.2792.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5a29efb14c971ea1e59695722ec425e0
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+Command: [bc79eade2ec6033a5131e7dd8ed773d7, findElement {using=xpath, value=(//p[contains(text(),'Devices')])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60395}, msedge: {msedgedriverVersion: 129.0.2792.52 (6462e8fc16ec..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60395/devtoo..., se:cdpVersion: 129.0.2792.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bc79eade2ec6033a5131e7dd8ed773d7
+at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
@@ -251,7 +249,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MoreFromSTCMenu -->
-        <test-method signature="MobilePostPaidMenu()[pri:4, instance:com.stc.test.HomeMenu@437ebf59]" started-at="2024-09-23T16:13:01 IST" name="MobilePostPaidMenu" finished-at="2024-09-23T16:13:03 IST" duration-ms="2033" status="FAIL">
+        <test-method signature="MobilePostPaidMenu()[pri:4, instance:com.stc.test.HomeMenu@437ebf59]" started-at="2024-09-23T16:27:25 IST" name="MobilePostPaidMenu" finished-at="2024-09-23T16:27:27 IST" duration-ms="2025" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
@@ -260,9 +258,9 @@ from unknown error: web view not found
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [5a29efb14c971ea1e59695722ec425e0, findElement {using=xpath, value=(//p[contains(text(),'Mobile')])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59636}, msedge: {msedgedriverVersion: 129.0.2792.52 (6462e8fc16ec..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59636/devtoo..., se:cdpVersion: 129.0.2792.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5a29efb14c971ea1e59695722ec425e0]]>
+Command: [bc79eade2ec6033a5131e7dd8ed773d7, findElement {using=xpath, value=(//p[contains(text(),'Mobile')])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60395}, msedge: {msedgedriverVersion: 129.0.2792.52 (6462e8fc16ec..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60395/devtoo..., se:cdpVersion: 129.0.2792.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bc79eade2ec6033a5131e7dd8ed773d7]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
@@ -271,11 +269,10 @@ from unknown error: web view not found
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [5a29efb14c971ea1e59695722ec425e0, findElement {using=xpath, value=(//p[contains(text(),'Mobile')])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59636}, msedge: {msedgedriverVersion: 129.0.2792.52 (6462e8fc16ec..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59636/devtoo..., se:cdpVersion: 129.0.2792.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5a29efb14c971ea1e59695722ec425e0
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+Command: [bc79eade2ec6033a5131e7dd8ed773d7, findElement {using=xpath, value=(//p[contains(text(),'Mobile')])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60395}, msedge: {msedgedriverVersion: 129.0.2792.52 (6462e8fc16ec..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60395/devtoo..., se:cdpVersion: 129.0.2792.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bc79eade2ec6033a5131e7dd8ed773d7
+at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
@@ -329,7 +326,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MobilePostPaidMenu -->
-        <test-method signature="MobilePrepaidMenu()[pri:5, instance:com.stc.test.HomeMenu@437ebf59]" started-at="2024-09-23T16:13:03 IST" name="MobilePrepaidMenu" finished-at="2024-09-23T16:13:05 IST" duration-ms="2004" status="FAIL">
+        <test-method signature="MobilePrepaidMenu()[pri:5, instance:com.stc.test.HomeMenu@437ebf59]" started-at="2024-09-23T16:27:27 IST" name="MobilePrepaidMenu" finished-at="2024-09-23T16:27:29 IST" duration-ms="2013" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
@@ -338,9 +335,9 @@ from unknown error: web view not found
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [5a29efb14c971ea1e59695722ec425e0, findElement {using=xpath, value=(//p[contains(text(),'Mobile')])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59636}, msedge: {msedgedriverVersion: 129.0.2792.52 (6462e8fc16ec..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59636/devtoo..., se:cdpVersion: 129.0.2792.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5a29efb14c971ea1e59695722ec425e0]]>
+Command: [bc79eade2ec6033a5131e7dd8ed773d7, findElement {using=xpath, value=(//p[contains(text(),'Mobile')])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60395}, msedge: {msedgedriverVersion: 129.0.2792.52 (6462e8fc16ec..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60395/devtoo..., se:cdpVersion: 129.0.2792.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bc79eade2ec6033a5131e7dd8ed773d7]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
@@ -349,11 +346,10 @@ from unknown error: web view not found
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [5a29efb14c971ea1e59695722ec425e0, findElement {using=xpath, value=(//p[contains(text(),'Mobile')])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59636}, msedge: {msedgedriverVersion: 129.0.2792.52 (6462e8fc16ec..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59636/devtoo..., se:cdpVersion: 129.0.2792.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5a29efb14c971ea1e59695722ec425e0
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+Command: [bc79eade2ec6033a5131e7dd8ed773d7, findElement {using=xpath, value=(//p[contains(text(),'Mobile')])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60395}, msedge: {msedgedriverVersion: 129.0.2792.52 (6462e8fc16ec..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60395/devtoo..., se:cdpVersion: 129.0.2792.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bc79eade2ec6033a5131e7dd8ed773d7
+at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
@@ -407,7 +403,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MobilePrepaidMenu -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.stc.test.HomeMenu@437ebf59]" started-at="2024-09-23T16:13:05 IST" name="tearDown" finished-at="2024-09-23T16:13:08 IST" duration-ms="3152" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.stc.test.HomeMenu@437ebf59]" started-at="2024-09-23T16:27:29 IST" name="tearDown" finished-at="2024-09-23T16:27:32 IST" duration-ms="3170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

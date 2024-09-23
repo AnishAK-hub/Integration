@@ -49,6 +49,7 @@ public class AutomationBase {
             EdgeOptions options = new EdgeOptions();
             if (browserName.equalsIgnoreCase("Edge_headless")) {
                 options.addArguments("--headless");
+                options.addArguments("--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage");
             }
             WebDriverManager.edgedriver().setup();
             driver = new EdgeDriver(options);
