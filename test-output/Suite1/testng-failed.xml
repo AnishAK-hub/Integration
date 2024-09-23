@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite1]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="extentlisteners.ExtentListeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Parallel Tests Edge5(failed)">
+    <parameter name="browserName" value="edge"/>
+    <classes>
+      <class name="com.stc.test.GetNewLine_Guest3">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SC_20_Guest_Internet_PrepaidScenario"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.stc.test.GetNewLine_Guest3 -->
+    </classes>
+  </test> <!-- Parallel Tests Edge5(failed) -->
+  <test thread-count="5" parallel="tests" name="Parallel Tests Edge3(failed)">
+    <parameter name="browserName" value="edge"/>
+    <classes>
+      <class name="com.stc.test.HomePayTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="LoginUser_PostPaid_Pay"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.stc.test.HomePayTest -->
+    </classes>
+  </test> <!-- Parallel Tests Edge3(failed) -->
+  <test thread-count="5" parallel="tests" name="Parallel Tests Edge4(failed)">
+    <parameter name="browserName" value="edge"/>
+    <classes>
+      <class name="com.stc.test.GetNewLine_Guest2">
+        <methods>
+          <include name="SC_20_Guest_Mobile_PostPaidScenario"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.stc.test.GetNewLine_Guest2 -->
+    </classes>
+  </test> <!-- Parallel Tests Edge4(failed) -->
+  <test thread-count="5" parallel="tests" name="Parallel Tests Edge2(failed)">
+    <parameter name="browserName" value="edge"/>
+    <classes>
+      <class name="com.stc.test.QitafTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SC_16_Partners"/>
+          <include name="setUp"/>
+          <include name="SC_14_Qitaf_Scenario"/>
+        </methods>
+      </class> <!-- com.stc.test.QitafTest -->
+    </classes>
+  </test> <!-- Parallel Tests Edge2(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
