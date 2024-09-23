@@ -3,8 +3,6 @@ package com.stc.base;
 import java.io.IOException;
 import java.time.Duration;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -17,7 +15,7 @@ public class AutomationBase {
     public WebDriver driver;
 
     /**
-     * Method to start Browser session Chrome/Firefox/Edge
+     * Method to start Browser session with Edge as the first priority, then Firefox
      * 
      * @author Anish
      * @since 03/October/2023
@@ -29,24 +27,8 @@ public class AutomationBase {
 
         System.out.println("Launching browser: " + browserName);
 
-        if (browserName.equalsIgnoreCase("chrome") || browserName.equalsIgnoreCase("Chrome_headless")) {
-            ChromeOptions options = new ChromeOptions();
-            if (browserName.equalsIgnoreCase("Chrome_headless")) {
-                options.addArguments("--headless");
-            }
-            WebDriverManager.chromedriver().forceDownload().setup();
-          //  WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver(options);
-
-        } else if (browserName.equalsIgnoreCase("firefox") || browserName.equalsIgnoreCase("Firefox_headless")) {
-            FirefoxOptions options = new FirefoxOptions();
-            if (browserName.equalsIgnoreCase("Firefox_headless")) {
-                options.addArguments("--headless");
-            }
-            WebDriverManager.firefoxdriver().setup();
-            driver = new FirefoxDriver(options);
-
-        } else if (browserName.equalsIgnoreCase("edge") || browserName.equalsIgnoreCase("Edge_headless")) {
+        if (browserName.equalsIgnoreCase("edge") || browserName.equalsIgnoreCase("Edge_headless")) {
+            // First Priority: Edge Browser
             EdgeOptions options = new EdgeOptions();
             options.addArguments("--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage", "--guest");
             if (browserName.equalsIgnoreCase("Edge_headless")) {
@@ -54,6 +36,15 @@ public class AutomationBase {
             }
             WebDriverManager.edgedriver().setup();
             driver = new EdgeDriver(options);
+
+        } else if (browserName.equalsIgnoreCase("firefox") || browserName.equalsIgnoreCase("Firefox_headless")) {
+            // Second Priority: Firefox Browser
+            FirefoxOptions options = new FirefoxOptions();
+            if (browserName.equalsIgnoreCase("Firefox_headless")) {
+                options.addArguments("--headless");
+            }
+            WebDriverManager.firefoxdriver().setup();
+            driver = new FirefoxDriver(options);
 
         } else {
             System.out.println("Unsupported browser: " + browserName);
