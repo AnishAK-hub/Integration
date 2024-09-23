@@ -150,15 +150,13 @@
                   <a name="AllDeviceMenu">
                   </a> <!-- AllDeviceMenu -->
                   <span class="method-name">AllDeviceMenu</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=129.0.2792.52)
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to decode response from marionette
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [bc79eade2ec6033a5131e7dd8ed773d7, findElement {using=xpath, value=(//span[contains(text(),&apos;Add filters&apos;)])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60395}, msedge: {msedgedriverVersion: 129.0.2792.52 (6462e8fc16ec..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60395/devtoo..., se:cdpVersion: 129.0.2792.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bc79eade2ec6033a5131e7dd8ed773d7
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fa21c4a9-42b2-4a83-bdf8-0265892c669d, findElement {using=xpath, value=(//p[contains(text(),&apos;Devices&apos;)])[1]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0.1, moz:accessibilityChecks: false, moz:buildID: 20240913135723, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 139352, moz:profile: C:\Users\ANISHK~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fa21c4a9-42b2-4a83-bdf8-0265892c669d
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -172,12 +170,12 @@ Session ID: bc79eade2ec6033a5131e7dd8ed773d7
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy21.isDisplayed(Unknown Source)
-	at com.stc.pages.HeaderManuPage.viewFilter(HeaderManuPage.java:108)
-	at com.stc.pages.HeaderManuPage.setSmartphones(HeaderManuPage.java:42)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
+	at com.stc.pages.HeaderManuPage.setDevice(HeaderManuPage.java:29)
+	at com.stc.pages.HeaderManuPage.setSmartphones(HeaderManuPage.java:38)
 	at com.stc.test.HomeMenu.AllDeviceMenu(HomeMenu.java:15)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 30 stack frames
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -186,15 +184,13 @@ Session ID: bc79eade2ec6033a5131e7dd8ed773d7
                   <a name="MobilePostPaidMenu">
                   </a> <!-- MobilePostPaidMenu -->
                   <span class="method-name">MobilePostPaidMenu</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=129.0.2792.52)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [bc79eade2ec6033a5131e7dd8ed773d7, findElement {using=xpath, value=(//p[contains(text(),&apos;Mobile&apos;)])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60395}, msedge: {msedgedriverVersion: 129.0.2792.52 (6462e8fc16ec..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60395/devtoo..., se:cdpVersion: 129.0.2792.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bc79eade2ec6033a5131e7dd8ed773d7
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fa21c4a9-42b2-4a83-bdf8-0265892c669d, findElement {using=xpath, value=(//p[contains(text(),&apos;Mobile&apos;)])[1]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0.1, moz:accessibilityChecks: false, moz:buildID: 20240913135723, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 139352, moz:profile: C:\Users\ANISHK~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fa21c4a9-42b2-4a83-bdf8-0265892c669d
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -208,12 +204,12 @@ Session ID: bc79eade2ec6033a5131e7dd8ed773d7
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy21.click(Unknown Source)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
 	at com.stc.pages.HeaderManuPage.setMobile(HeaderManuPage.java:23)
 	at com.stc.pages.HeaderManuPage.setWhyPostpaid(HeaderManuPage.java:205)
 	at com.stc.test.HomeMenu.MobilePostPaidMenu(HomeMenu.java:45)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 30 stack frames
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -222,15 +218,13 @@ Session ID: bc79eade2ec6033a5131e7dd8ed773d7
                   <a name="MobilePrepaidMenu">
                   </a> <!-- MobilePrepaidMenu -->
                   <span class="method-name">MobilePrepaidMenu</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=129.0.2792.52)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [bc79eade2ec6033a5131e7dd8ed773d7, findElement {using=xpath, value=(//p[contains(text(),&apos;Mobile&apos;)])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60395}, msedge: {msedgedriverVersion: 129.0.2792.52 (6462e8fc16ec..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60395/devtoo..., se:cdpVersion: 129.0.2792.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bc79eade2ec6033a5131e7dd8ed773d7
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fa21c4a9-42b2-4a83-bdf8-0265892c669d, findElement {using=xpath, value=(//p[contains(text(),&apos;Mobile&apos;)])[1]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0.1, moz:accessibilityChecks: false, moz:buildID: 20240913135723, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 139352, moz:profile: C:\Users\ANISHK~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fa21c4a9-42b2-4a83-bdf8-0265892c669d
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -244,12 +238,12 @@ Session ID: bc79eade2ec6033a5131e7dd8ed773d7
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy21.click(Unknown Source)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
 	at com.stc.pages.HeaderManuPage.setMobile(HeaderManuPage.java:23)
 	at com.stc.pages.HeaderManuPage.setWhyGo(HeaderManuPage.java:248)
 	at com.stc.test.HomeMenu.MobilePrepaidMenu(HomeMenu.java:54)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 30 stack frames
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -258,15 +252,13 @@ Session ID: bc79eade2ec6033a5131e7dd8ed773d7
                   <a name="MoreFromSTCMenu">
                   </a> <!-- MoreFromSTCMenu -->
                   <span class="method-name">MoreFromSTCMenu</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=129.0.2792.52)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [bc79eade2ec6033a5131e7dd8ed773d7, findElement {using=xpath, value=(//p[contains(text(),&apos;Devices&apos;)])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60395}, msedge: {msedgedriverVersion: 129.0.2792.52 (6462e8fc16ec..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60395/devtoo..., se:cdpVersion: 129.0.2792.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bc79eade2ec6033a5131e7dd8ed773d7
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fa21c4a9-42b2-4a83-bdf8-0265892c669d, findElement {using=xpath, value=(//p[contains(text(),&apos;Devices&apos;)])[1]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0.1, moz:accessibilityChecks: false, moz:buildID: 20240913135723, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 139352, moz:profile: C:\Users\ANISHK~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fa21c4a9-42b2-4a83-bdf8-0265892c669d
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -280,12 +272,12 @@ Session ID: bc79eade2ec6033a5131e7dd8ed773d7
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy21.click(Unknown Source)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
 	at com.stc.pages.HeaderManuPage.setDevice(HeaderManuPage.java:29)
 	at com.stc.pages.HeaderManuPage.setZeed(HeaderManuPage.java:158)
 	at com.stc.test.HomeMenu.MoreFromSTCMenu(HomeMenu.java:36)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 30 stack frames
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -294,15 +286,13 @@ Session ID: bc79eade2ec6033a5131e7dd8ed773d7
                   <a name="PopularBrandMenu">
                   </a> <!-- PopularBrandMenu -->
                   <span class="method-name">PopularBrandMenu</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=129.0.2792.52)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.21&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [bc79eade2ec6033a5131e7dd8ed773d7, findElement {using=xpath, value=(//p[contains(text(),&apos;Devices&apos;)])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 129.0.2792.52, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60395}, msedge: {msedgedriverVersion: 129.0.2792.52 (6462e8fc16ec..., userDataDir: C:\Users\ANISHK~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60395/devtoo..., se:cdpVersion: 129.0.2792.52, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bc79eade2ec6033a5131e7dd8ed773d7
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fa21c4a9-42b2-4a83-bdf8-0265892c669d, findElement {using=xpath, value=(//p[contains(text(),&apos;Devices&apos;)])[1]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0.1, moz:accessibilityChecks: false, moz:buildID: 20240913135723, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 139352, moz:profile: C:\Users\ANISHK~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: fa21c4a9-42b2-4a83-bdf8-0265892c669d
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -316,12 +306,12 @@ Session ID: bc79eade2ec6033a5131e7dd8ed773d7
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy21.click(Unknown Source)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
 	at com.stc.pages.HeaderManuPage.setDevice(HeaderManuPage.java:29)
 	at com.stc.pages.HeaderManuPage.setApple(HeaderManuPage.java:114)
 	at com.stc.test.HomeMenu.PopularBrandMenu(HomeMenu.java:27)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 30 stack frames
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -341,7 +331,7 @@ Session ID: bc79eade2ec6033a5131e7dd8ed773d7
     &lt;listener class-name=&quot;extentlisteners.ExtentListeners&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Parallel Tests Edge&quot;&gt;
-    &lt;parameter name=&quot;browserName&quot; value=&quot;edge&quot;/&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.stc.test.HomeMenu&quot;/&gt;
     &lt;/classes&gt;
@@ -387,28 +377,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'AllDeviceMenu')
 data.setCell(0, 2, 'com.stc.test.HomeMenu')
-data.setCell(0, 3, 36780);
+data.setCell(0, 3, 2095);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'MobilePostPaidMenu')
 data.setCell(1, 2, 'com.stc.test.HomeMenu')
-data.setCell(1, 3, 2025);
+data.setCell(1, 3, 2026);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'MoreFromSTCMenu')
 data.setCell(2, 2, 'com.stc.test.HomeMenu')
-data.setCell(2, 3, 2019);
+data.setCell(2, 3, 2023);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'MobilePrepaidMenu')
+data.setCell(3, 1, 'PopularBrandMenu')
 data.setCell(3, 2, 'com.stc.test.HomeMenu')
-data.setCell(3, 3, 2013);
+data.setCell(3, 3, 2017);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'PopularBrandMenu')
+data.setCell(4, 1, 'MobilePrepaidMenu')
 data.setCell(4, 2, 'com.stc.test.HomeMenu')
-data.setCell(4, 3, 2006);
+data.setCell(4, 3, 2016);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 44 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -436,42 +426,44 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.stc.test.HomeMenu</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUp(edge)</span>
+                <span class="method-name">setUp(firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">AllDeviceMenu</span>
-                <span class="method-start">4643 ms</span>
+                <span class="method-start">8716 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">PopularBrandMenu</span>
-                <span class="method-start">41474 ms</span>
+                <span class="method-start">10900 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">MoreFromSTCMenu</span>
-                <span class="method-start">43484 ms</span>
+                <span class="method-start">12927 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">MobilePostPaidMenu</span>
-                <span class="method-start">45510 ms</span>
+                <span class="method-start">14954 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">MobilePrepaidMenu</span>
-                <span class="method-start">47539 ms</span>
+                <span class="method-start">16988 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">tearDown</span>
-                <span class="method-start">49557 ms</span>
+                <span class="method-start">19009 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

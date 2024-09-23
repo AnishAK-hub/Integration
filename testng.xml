@@ -7,7 +7,7 @@
 	</listeners>
 
 	<test name="Parallel Tests Edge">
-		<parameter name="browserName" value="edge" />
+		<parameter name="browserName" value="firefox" />
 		<classes>
 
 						<class name="com.stc.test.HomeMenu" />
