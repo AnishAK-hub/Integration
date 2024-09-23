@@ -51,7 +51,8 @@ public class AutomationBase {
                 options.addArguments("--headless");
                 options.addArguments("--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage");
             }
-            WebDriverManager.edgedriver().setup();
+            WebDriverManager.edgedriver().browserVersion("129.0.2792.52").setup();
+         // WebDriverManager.edgedriver().setup();
             driver = new EdgeDriver(options);
 
         } else {
