@@ -87,12 +87,12 @@
 			<version>5.3.2</version>
 		</dependency>
 
-		<!-- Allure TestNG -->
+		<!-- Allure TestNG 
 		<dependency>
 			<groupId>io.qameta.allure</groupId>
 			<artifactId>allure-testng</artifactId>
 			<version>2.27.0</version>
-		</dependency>
+		</dependency>-->
 
 		<!-- javax.servlet API -->
 		<dependency>

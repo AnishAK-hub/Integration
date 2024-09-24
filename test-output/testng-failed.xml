@@ -5,13 +5,10 @@
     <listener class-name="extentlisteners.ExtentListeners"/>
   </listeners>
   <test thread-count="5" name="Parallel Tests Edge(failed)">
-    <parameter name="browserName" value="firefox"/>
     <classes>
       <class name="com.stc.test.HomeMenu">
         <methods>
-          <include name="MobilePostPaidMenu"/>
           <include name="tearDown"/>
-          <include name="MoreFromSTCMenu"/>
           <include name="MobilePrepaidMenu"/>
           <include name="AllDeviceMenu"/>
           <include name="PopularBrandMenu"/>

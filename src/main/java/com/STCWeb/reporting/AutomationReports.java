@@ -1,8 +1,6 @@
 package com.STCWeb.reporting;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -18,7 +16,6 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.stc.base.AutomationBase;
-import io.qameta.allure.Allure;
 
 public class AutomationReports extends AutomationBase implements ITestListener {
 
@@ -75,34 +72,31 @@ public class AutomationReports extends AutomationBase implements ITestListener {
 	 */
 
 	 @Override
-	public void onTestFailure(ITestResult result) {
-		try {
-			if (driver != null) {
+	 public void onTestFailure(ITestResult result) {
+	     try {
+	         if (driver != null) {
+	             Date d = new Date();
+	             String fileName = d.toString().replace(":", "_").replace(" ", "_") + ".png";
+	             File pageScreenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+	             File destinationFile = new File("./screenshot/" + "error_" + fileName);
+	             FileUtils.copyFile(pageScreenshot, destinationFile.getAbsoluteFile());
 
-				Date d = new Date();
-				String fileName = d.toString().replace(":", "_").replace(" ", "_") + ".png";
-				File pageScreenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-				File destinationFile = new File("./screenshot/" + "error_" + fileName);
-				FileUtils.copyFile(pageScreenshot, destinationFile.getAbsoluteFile());
+	             // Commenting out the Allure code
+	             // InputStream is = new FileInputStream(destinationFile);
+	             // Allure.addAttachment("Screenshot", is);
 
-				InputStream is = new FileInputStream(destinationFile);
-				Allure.addAttachment("Screenshot", is);
-				/*
-				// Attach the screenshot
-				test.log(Status.FAIL, "Test failed: " + result.getName());
-				test.log(Status.FAIL, "Failure Details: " + result.getThrowable());
-				test.addScreenCaptureFromPath(destinationFile.getAbsolutePath(), result.getName());
-				// test.fail("Failure screenshot:",
-				// MediaEntityBuilder.createScreenCaptureFromPath("./screenshot/" + "error_" +
-				// fileName).build());
-				 */
-			} else {
-				System.err.println("WebDriver is null.");
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
+	             // Attach the screenshot to the Extent Report
+	             test.log(Status.FAIL, "Test failed: " + result.getName());
+	             test.log(Status.FAIL, "Failure Details: " + result.getThrowable());
+	             test.addScreenCaptureFromPath(destinationFile.getAbsolutePath(), result.getName());
+	         } else {
+	             System.err.println("WebDriver is null.");
+	         }
+	     } catch (Exception e) {
+	         e.printStackTrace();
+	     }
+	 }
+
 
 	/**
 	 * onTestSkipped() - Called when a test method is skipped and provides
